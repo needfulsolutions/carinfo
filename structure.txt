@@ -1,0 +1,41 @@
+
+/
+=> list all available makes
+
+
+/:make
+=> list all available models of this make
+
+
+/<make>/:model
+=> list all the available years of this model and make
+
+
+/<make>/<model>/:year
+=> list all available files for this make, model and year
+
+
+/<make>/<model>/<year>/<file>
+=> return a magnet link/filehost and meta data of the file
+
+
+=======================================
+
+routes
+
+v1/volvo
+v1/volvo/v70
+v1/volvo/v70/1997
+
+v1/volvo/:model/*year
+v1/subaru/:model/*year
+v1/volkswagen/:model/*year
+
+/v1
+=>
+> volvo
+> subaru
+> volkswagen
+...
+
+
