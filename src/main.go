@@ -37,6 +37,7 @@ func main() {
 
     // static routes for web
     r.Static("/assets/css", "./static/css")
+    r.Static("/assets/images", "./static/images")
 
     // show home page !
     r.GET("/", func(c *gin.Context) {
